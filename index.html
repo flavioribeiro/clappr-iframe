@@ -3,11 +3,10 @@
   <script type="text/javascript" charset="utf-8" src="clappr-iframe.js"></script>
   <script type="text/javascript" charset="utf-8">
     window.onload = function() {
-      var player = clapprLoader({
+      clapprLoad('player-wrapper', {
         source: 'http://cdn.bem.tv/stream/soccer5/playlist.m3u8', 
         poster: 'http://cdn.surffcs.com/images/team/gabrielmedina-feature.jpg?sfvrsn=6'
       });
-      player.attachTo(document.getElementById('player-wrapper'));
     }
   </script>
 

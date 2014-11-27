@@ -21,9 +21,11 @@ var buildQueryString = function(params) {
   return result;
 };
 
-clapprLoader = function(params) {
+clapprLoad = function(elementId, params) {
   var queryString = buildQueryString(params);
-  return createClapprIframe(params, queryString);
+  var iframe = createClapprIframe(params, queryString);
+  var el = document.getElementById(elementId);
+  el.appendChild(iframe);
 };
 
 
